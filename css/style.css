@@ -7,7 +7,9 @@
     background-color: #fdf2e9;
     height: 9.6rem;
     padding: 0 4.8rem;
+    position: relative;
 }
+
 .logo{
     height: 2.2rem;
     
@@ -17,9 +19,11 @@
     list-style: none;
     display: flex; 
     align-items: center;
-    gap: 3.2rem;
+    gap: 4.8rem;
 }
-.main-nav-link:link, .main-nav-link:visited{
+
+.main-nav-link:link, 
+.main-nav-link:visited{
     display: inline-block;
     text-decoration: none;
     color: #333;
@@ -43,11 +47,31 @@
     background-color: #cf711f;
 }
 
+/* MOBILE */
+.btn-mobile-nav{
+    border: none;
+    background-color: none;
+    cursor: pointer;
+
+    display: none;
+}
+.icon-mobile-nav{
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+    display: none;
+}
+ 
+
 /* HERO SECTION */
 .section-hero{
     background-color: #fdf2e9;
     padding: 4.8rem 0 9.6rem 0;
 }
+
 .hero{
     max-width: 130rem;
     margin: 0 auto;
@@ -391,7 +415,7 @@
     line-height: 1.8;
 
 }
-/* -----Meals Section---- */
+/* -----Call-to-Action Section---- */
 .section-cta{
     padding: 4.8rem 0 12.8rem 0;
 }
@@ -448,7 +472,7 @@
     border: none;
     background-color: #fdf2e9;
     border-radius: 9px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 .cta-form input::placeholder{
     color: #aaa;
